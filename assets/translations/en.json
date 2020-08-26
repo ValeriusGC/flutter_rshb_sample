@@ -1,3 +1,7 @@
 {
-  "main_title": "РСХБ-тест"
+  "main_title": "RSHB-test",
+  "catalog_page_title": "Catalog",
+  "detail_page_title": "Detail",
+  "load_catalog": "Load catalog",
+  "load_detail": "Load detail"
 }
