@@ -14,20 +14,22 @@
 **Android:**
 
 <p float="left">
-    <img src="./images/android_1.jpg" alt="drawing" width="100"/>
-    <img src="./images/android_2.jpg" alt="drawing" width="100"/>
-    <img src="./images/android_3.jpg" alt="drawing" width="100"/>
-    <img src="./images/android_4.jpg" alt="drawing" width="100"/>
-    <img src="./images/android_5.jpg" alt="drawing" width="100"/>
+    <img src="./images/android_1.jpg" alt="drawing" width="150"/>
+    <img src="./images/android_2.jpg" alt="drawing" width="150"/>
+    <img src="./images/android_3.jpg" alt="drawing" width="150"/>
+    <img src="./images/android_4.jpg" alt="drawing" width="150"/>
+    <img src="./images/android_5.jpg" alt="drawing" width="150"/>
 </p>    
 
 **iOS:**
 
-![](./images/ios_1.png)
-![](./images/ios_2.png)
-![](./images/ios_3.png)
-![](./images/ios_4.png)
-![](./images/ios_5.png)
+<p float="left">
+    <img src="./images/ios_1.png" alt="drawing" width="150"/>
+    <img src="./images/ios_2.png" alt="drawing" width="150"/>
+    <img src="./images/ios_3.png" alt="drawing" width="150"/>
+    <img src="./images/ios_4.png" alt="drawing" width="150"/>
+    <img src="./images/ios_5.png" alt="drawing" width="150"/>
+</p>    
 
 
 
