@@ -1,7 +1,7 @@
 # Тестовое задание для РСХБ-Интех
 
 
-Работа сделана согласно ТЗ.
+Работа сделана согласно [ТЗ](https://docs.google.com/document/d/1yLhaFMSEdxWThxvEqFQgYOjwxgkDHjiMnD9YFwNEg7w/edit).
 
 Проверка для iOS сделана при помощи Codemagic -> VNC -> виртуальной машины iOS с XCode 11.6.
 
