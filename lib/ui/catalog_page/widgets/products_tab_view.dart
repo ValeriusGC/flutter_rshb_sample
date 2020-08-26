@@ -160,8 +160,6 @@ class _Items extends StatelessWidget {
         stream: model.onDataChanged,
         builder: (context, snapshot) {
           final d = snapshot.data;
-          print(
-              '$now: _Items.build: d.data.products.length == ${d.data.products.length}');
           if (d.isLoading) {
             return centerCircularProgressIndicator;
           }

@@ -156,8 +156,8 @@ class CatalogModel implements Model{
         (map[ApiConst.productsKey] as List).cast<Map<String, dynamic>>();
 
     return productList.map((e) {
-//      print('DataModel._decodeProducts: e=$e');
-      return Product(
+
+      final p = Product(
         id: e[ApiConst.productIdKey] as int,
         title: e[ApiConst.productTitleKey],
         section: sections.firstWhere(
@@ -177,8 +177,10 @@ class CatalogModel implements Model{
         description: e[ApiConst.productDescriptionKey],
         price: e[ApiConst.productPriceKey].toDouble(),
         characteristics: (e[ApiConst.productCharacteristicsKey] as List)
-            .cast<Map<String, String>>(),
+            .map((e) => Map<String, String>.from(e)).toList(),
       );
+      print('$now: CatalogModel._decodeProducts: p=${p.characteristics.runtimeType}');
+      return p;
     }).toList();
   }
 

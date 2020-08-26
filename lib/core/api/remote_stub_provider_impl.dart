@@ -1,4 +1,6 @@
 import 'dart:math';
+import 'package:frshbsample/core/common/funcs.dart';
+
 import 'remote_provider.dart';
 import 'remote_provider_data.dart';
 

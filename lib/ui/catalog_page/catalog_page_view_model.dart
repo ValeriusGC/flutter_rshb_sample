@@ -120,7 +120,7 @@ class CatalogPageViewModel implements Model{
   }
 
   Future loadDetail(Product product) async {
-    navService.pushNamed(NavConst.detailRoute);
+    navService.pushNamed(NavConst.detailRoute, args: product);
   }
 
   @override

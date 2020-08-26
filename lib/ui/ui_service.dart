@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 abstract class UiConst {
+  static const minPaddingSize = 4.0;
   static const stdPaddingSize = 8.0;
   static const dblPaddingSize = 16.0;
+  static const minGapVerticalSize = 8.0;
   static const stdGapVerticalSize = 24.0;
   //
   static const fruitsCategoryImagePath = 'assets/images/categories/fruit.png';
@@ -13,6 +15,7 @@ abstract class UiConst {
 
 }
 
+const minimalVerticalSizedBox = SizedBox(height: UiConst.minGapVerticalSize);
 const standardVerticalSizedBox = SizedBox(height: UiConst.stdGapVerticalSize);
 const circularProgressIndicator = CircularProgressIndicator();
 const centerCircularProgressIndicator = Center(child: CircularProgressIndicator());
