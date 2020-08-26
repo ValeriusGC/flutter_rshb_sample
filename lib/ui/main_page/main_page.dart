@@ -35,7 +35,7 @@ class _MainPageState extends State<MainPage> {
         title: Text('main_title'.tr()),
       ),
       body: Container(
-        color: Theme.of(context).backgroundColor,
+        color: brandMainBackgroundColor,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

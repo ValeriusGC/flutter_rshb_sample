@@ -24,126 +24,10 @@ class ProductsTabView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              StreamBuilder<bool>(
-                  initialData: TheCatalogPageViewModel.sortByPrice,
-                  stream: TheCatalogPageViewModel.onSortByPrice,
-                  builder: (context, snapshot) {
-                    return IconButton(
-                      icon: Icon(
-                        Icons.sort,
-                        color: snapshot.data ? Colors.blue : Colors.grey,
-                      ),
-                      onPressed: () => TheCatalogPageViewModel.doSortByPrice(
-                          !TheCatalogPageViewModel.sortByPrice),
-                    );
-                  }),
-              IconButton(
-                icon: Stack(
-                  overflow: Overflow.visible,
-                  children: [
-                    StreamBuilder<bool>(
-                        initialData: TheCatalogPageViewModel.favoriteFilter,
-                        stream: TheCatalogPageViewModel.onFavoriteFilter,
-                        builder: (context, snapshot) {
-                          return Icon(
-                            Icons.favorite,
-                            color: snapshot.data ? Colors.blue : Colors.grey,
-                          );
-                        }),
-                    Positioned(
-                      top: -7,
-                      right: -7,
-                      child: StreamBuilder<List<int>>(
-                          initialData: TheCatalogPageViewModel.favorites,
-                          stream: TheCatalogPageViewModel.onFavoriteChanged,
-                          builder: (context, snapshot) {
-                            return Text('${snapshot.data.length}');
-                          }),
-                    ),
-                  ],
-                ),
-                onPressed: () => TheCatalogPageViewModel.filterFavorite(
-                    !TheCatalogPageViewModel.favoriteFilter),
-              ),
-              _CategoryFilterButton(
-                imagePath: UiConst.fruitsCategoryImagePath,
-                titleValue: ApiConst.categoryFruitTitleValue,
-              ),
-              _CategoryFilterButton(
-                imagePath: UiConst.meatCategoryImagePath,
-                titleValue: ApiConst.categoryMeatTitleValue,
-              ),
-              _CategoryFilterButton(
-                imagePath: UiConst.milkCategoryImagePath,
-                titleValue: ApiConst.categoryMilkTitleValue,
-              ),
-            ],
-          ),
-          Flexible(
-            child: _Items(
-              model: TheCatalogPageViewModel,
-            ),
-          ),
-        ],
+      child: _Items(
+        model: TheCatalogPageViewModel,
       ),
     );
-  }
-}
-
-class _CategoryFilterButton extends StatelessWidget {
-  final String imagePath;
-  final String titleValue;
-
-  const _CategoryFilterButton({
-    Key key,
-    @required this.imagePath,
-    @required this.titleValue,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    final _w = MediaQuery.of(context).size.width / 5 - 12;
-    return StreamBuilder<List<String>>(
-        initialData: TheCatalogPageViewModel.categoriesFilter,
-        stream: TheCatalogPageViewModel.onCategoriesFilter,
-        builder: (context, snapshot) {
-          return IntrinsicWidth(
-            child: Container(
-              width: _w,
-              child: Column(
-                children: [
-                  IconButton(
-                      icon: ImageIcon(
-                        AssetImage(imagePath),
-                        color: snapshot.data.contains(titleValue)
-                            ? Colors.blue
-                            : Colors.black,
-                      ),
-                      onPressed: () => TheCatalogPageViewModel.filterByCategory(
-                          titleValue,
-                          !TheCatalogPageViewModel.categoriesFilter
-                              .contains(titleValue))),
-                  Text(
-                    titleValue,
-                    softWrap: true,
-                    style: TextStyle(
-                      fontSize: 10,
-                      color: snapshot.data.contains(titleValue)
-                          ? Colors.blue
-                          : Colors.black54,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ],
-              ),
-            ),
-          );
-        });
   }
 }
 
@@ -211,15 +95,8 @@ class _Card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final rating = 'rating'.plural(product.ratingCount);
-//    print('$now: _Card.build: rating=$rating');
     return GestureDetector(
-      onTap: () {
-        model.loadDetail(product);
-//        Navigator.push(
-//          context,
-//          MaterialPageRoute(builder: (context) => DetailPage()),
-//        );
-      },
+      onTap: () => model.loadDetail(product),
       child: Container(
         child: Card(
           shape: RoundedRectangleBorder(
@@ -279,7 +156,7 @@ class _Card extends StatelessWidget {
                       fillColor: Colors.white,
                       onPressed: () {},
                     ),
-                  )
+                  ),
                 ],
               ),
               Container(
