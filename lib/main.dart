@@ -28,7 +28,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -39,6 +38,7 @@ class MyApp extends StatelessWidget {
       //
       navigatorKey: NavigationService.navigationKey,
       onGenerateRoute: generateRoute,
+      //initialRoute: NavConst.catalogRoute,
       initialRoute: NavConst.mainRoute,
     );
   }

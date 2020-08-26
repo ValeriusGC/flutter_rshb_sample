@@ -3,5 +3,18 @@
   "catalog_page_title": "Catalog",
   "detail_page_title": "Detail",
   "load_catalog": "Load catalog",
-  "load_detail": "Load detail"
+  "load_detail": "Load detail",
+  "products_title": "Products",
+  "farmers_title": "Farmers",
+  "tours_title": "Agrotours",
+  "empty_content": "Empty for now",
+  "empty_catalog_title": "No such products",
+  "rating": {
+    "zero": "{} votes",
+    "one": "{} vote",
+    "two": "{} votes",
+    "few": "{} votes",
+    "many": "{} votes",
+    "other": "{} votes"
+  }
 }

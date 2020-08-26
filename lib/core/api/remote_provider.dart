@@ -26,6 +26,10 @@ abstract class ApiConst {
   static const productDescriptionKey = 'description';
   static const productPriceKey = 'price';
   static const productCharacteristicsKey = 'characteristics';
+  //
+  static const categoryFruitTitleValue = 'Овощи и фрукты';
+  static const categoryMeatTitleValue = 'Мясо и рыба';
+  static const categoryMilkTitleValue = 'Молоко и яйца';
 }
 
 /// Interface for remote provider.

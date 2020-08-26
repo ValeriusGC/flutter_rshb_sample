@@ -3,5 +3,18 @@
   "catalog_page_title": "Каталог",
   "detail_page_title": "Характеристики",
   "load_catalog": "Загрузить каталог",
-  "load_detail": "Характеристики"
+  "load_detail": "Характеристики",
+  "products_title": "Продукты",
+  "farmers_title": "Фермеры",
+  "tours_title": "Агротуры",
+  "empty_content": "Пока пусто",
+  "empty_catalog_title": "Продукты отсутствуют",
+  "rating": {
+    "zero": "{} оценок",
+    "one": "{} оценка",
+    "two": "{} оценки",
+    "few": "{} оценки",
+    "many": "{} оценок",
+    "other": "{} оценок"
+  }
 }

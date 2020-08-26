@@ -1,13 +1,14 @@
 import 'dart:async';
 
 import 'package:frshbsample/core/model/model.dart';
+import 'package:frshbsample/sl.dart';
 import 'package:meta/meta.dart';
 import 'package:frshbsample/ui/nav_service.dart';
 import 'package:rxdart/rxdart.dart';
 
 @immutable
 class MainPageViewModel implements Model{
-  static const _timerStartValue = 10;
+  static const _timerStartValue = 1;
   static const _timerDurationValue = 1000;
 
   final _timerCell = <Timer>[null];
@@ -30,6 +31,7 @@ class MainPageViewModel implements Model{
 
   void showCatalogPage() async {
     navService.pushNamed(NavConst.catalogRoute);
+    TheCatalogPageViewModel.init();
     _cancelTimer();
   }
 
