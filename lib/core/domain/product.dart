@@ -73,6 +73,6 @@ class Product extends Equatable {
         shortDescription,
         description,
         price,
-        characteristics,
+//        characteristics, // FIXME equatable has issue (see catalog_model_test)
       ];
 }

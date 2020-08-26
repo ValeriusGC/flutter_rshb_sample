@@ -18,7 +18,7 @@ void main() async {
   test('API RemoteProvider test', () async {
     print('${testDelimiter()}: API RemoteProvider  test');
     final s1 = await _loadFromAsset();
-    final s2 = await TestRemoteProvider.fetch();
+    final s2 = await TestTheRemoteProvider.fetch();
     expect(s2, equals(s1));
   });
 
@@ -28,7 +28,7 @@ void main() async {
     /// test that delaying between 300 & 600 msecs
     for (var i = 0; i < 10; ++i) {
       final start = DateTime.now().millisecondsSinceEpoch;
-      await TestRemoteProvider.fetch();
+      await TestTheRemoteProvider.fetch();
       final passed = DateTime.now().millisecondsSinceEpoch - start;
       expect(passed, lessThan(StubApiConst.upperBound));
       expect(passed, greaterThan(StubApiConst.lowerBound));
