@@ -12,11 +12,11 @@
 Для запуска на Android можно [скачать артефакт из гитхаба](https://github.com/ValeriusGC/flutter_rshb_sample/releases/tag/v.0.1.0).
 
 **Android:**
-![](./images/android_1.jpg)
-![](./images/android_2.jpg)
-![](./images/android_3.jpg)
-![](./images/android_4.jpg)
-![](./images/android_5.jpg)
+![](./images/android_1.jpg =100px)
+![](./images/android_2.jpg =100px)
+![](./images/android_3.jpg =100px)
+![](./images/android_4.jpg =100px)
+![](./images/android_5.jpg =100px)
 
 **iOS:**
 ![](./images/ios_1.png)
