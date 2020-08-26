@@ -45,5 +45,6 @@ class ModelState<D> extends Equatable {
 
 ///
 abstract class Model {
-  void dispose();
+  Future init();
+  Future dispose();
 }

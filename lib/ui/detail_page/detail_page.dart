@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:frshbsample/core/domain/product.dart';
-import 'package:frshbsample/sl.dart';
 import 'package:frshbsample/ui/ui_service.dart';
 
 class DetailPage extends StatelessWidget {

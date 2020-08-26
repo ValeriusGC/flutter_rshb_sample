@@ -1,19 +1,22 @@
 import 'dart:async';
 
+import 'package:frshbsample/core/model/model.dart';
 import 'package:meta/meta.dart';
 import 'package:frshbsample/ui/nav_service.dart';
 import 'package:rxdart/rxdart.dart';
 
 @immutable
-class CatalogPageViewModel {
+class CatalogPageViewModel implements Model{
 
-  void init() {
+  @override
+  Future init() async {
   }
 
   void showDetailPage() async {
     navService.pushNamed(NavConst.detailRoute);
   }
 
-  void dispose() {
+  @override
+  Future dispose() async {
   }
 }

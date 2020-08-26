@@ -12,7 +12,7 @@ import 'catalog_data.dart';
 import 'model.dart';
 
 ///
-class CatalogModel {
+class CatalogModel implements Model{
   // --
 
   ///
@@ -61,6 +61,7 @@ class CatalogModel {
 
   List<Product> get affectedData => _onAffectedData.stream.value;
 
+  @override
   Future init() async {
     await load();
   }
@@ -300,7 +301,8 @@ class CatalogModel {
     _onAffectedData.add(affected);
   }
 
-  void dispose() {
+  @override
+  Future dispose() async {
     _onDataChanged.close();
     _onFavoriteFilter.close();
     _onAffectedData.close();

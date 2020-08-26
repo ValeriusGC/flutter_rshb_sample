@@ -1,11 +1,12 @@
 import 'dart:async';
 
+import 'package:frshbsample/core/model/model.dart';
 import 'package:meta/meta.dart';
 import 'package:frshbsample/ui/nav_service.dart';
 import 'package:rxdart/rxdart.dart';
 
 @immutable
-class MainPageViewModel {
+class MainPageViewModel implements Model{
   static const _timerStartValue = 10;
   static const _timerDurationValue = 1000;
 
@@ -13,7 +14,8 @@ class MainPageViewModel {
 
   final onTick = BehaviorSubject.seeded(_timerStartValue);
 
-  void init() {
+  @override
+  Future init() async {
     if (timerCell[0] == null) {
       onTick.add(_timerStartValue);
       timerCell[0] =
@@ -40,7 +42,8 @@ class MainPageViewModel {
     timerCell[0] = null;
   }
 
-  void dispose() {
+  @override
+  Future dispose() async {
     _cancelTimer();
     onTick.close();
   }
