@@ -10,15 +10,15 @@ class MainPageViewModel implements Model{
   static const _timerStartValue = 10;
   static const _timerDurationValue = 1000;
 
-  final timerCell = <Timer>[null];
+  final _timerCell = <Timer>[null];
 
   final onTick = BehaviorSubject.seeded(_timerStartValue);
 
   @override
   Future init() async {
-    if (timerCell[0] == null) {
+    if (_timerCell[0] == null) {
       onTick.add(_timerStartValue);
-      timerCell[0] =
+      _timerCell[0] =
           Timer.periodic(Duration(milliseconds: _timerDurationValue), (t) {
         onTick.add(onTick.value - 1);
         if (onTick.value < 1) {
@@ -38,8 +38,8 @@ class MainPageViewModel implements Model{
   }
 
   void _cancelTimer() {
-    timerCell[0]?.cancel();
-    timerCell[0] = null;
+    _timerCell[0]?.cancel();
+    _timerCell[0] = null;
   }
 
   @override
