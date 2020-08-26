@@ -19,3 +19,6 @@ const minimalVerticalSizedBox = SizedBox(height: UiConst.minGapVerticalSize);
 const standardVerticalSizedBox = SizedBox(height: UiConst.stdGapVerticalSize);
 const circularProgressIndicator = CircularProgressIndicator();
 const centerCircularProgressIndicator = Center(child: CircularProgressIndicator());
+
+const brandMainColor = Colors.green;
+const brandMainBackgroundColor = Colors.lightGreen;

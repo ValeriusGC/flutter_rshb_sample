@@ -9,6 +9,8 @@
   "tours_title": "Агротуры",
   "empty_content": "Пока пусто",
   "empty_catalog_title": "Продукты отсутствуют",
+  "show_characteristics": "Показать характеристики",
+  "hide_characteristics": "Скрыть характеристики",
   "rating": {
     "zero": "{} оценок",
     "one": "{} оценка",

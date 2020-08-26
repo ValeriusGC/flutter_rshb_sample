@@ -9,6 +9,8 @@
   "tours_title": "Agrotours",
   "empty_content": "Empty for now",
   "empty_catalog_title": "No such products",
+  "show_characteristics": "Show characteristics",
+  "hide_characteristics": "Hide characteristics",
   "rating": {
     "zero": "{} votes",
     "one": "{} vote",

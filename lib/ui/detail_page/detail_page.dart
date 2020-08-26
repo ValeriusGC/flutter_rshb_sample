@@ -160,7 +160,9 @@ class DetailPage extends StatelessWidget {
                                     Row(
                                       children: [
                                         Text(
-                                          snapshot.data ? 'показать' : 'скрыть',
+                                          snapshot.data
+                                              ? 'show_characteristics'.tr()
+                                              : 'hide_characteristics'.tr(),
                                           style: TextStyle(
                                               color: Colors.green,
                                               fontWeight: FontWeight.bold),
