@@ -9,9 +9,9 @@ import 'widgets/farmers_tab_view.dart';
 import 'widgets/products_tab_view.dart';
 import 'widgets/tours_tab_view.dart';
 
-const tabLength = 3;
-const toolHeight = 150.0;
-const iconHeight = 72.0;
+const _tabLength = 3;
+const _toolHeight = 150.0;
+const _iconHeight = 72.0;
 
 class CatalogPage extends StatelessWidget {
   @override
@@ -23,17 +23,17 @@ class CatalogPage extends StatelessWidget {
             title: Text('catalog_page_title'.tr()),
           ),
           body: DefaultTabController(
-            length: tabLength,
+            length: _tabLength,
             child: NestedScrollView(
               headerSliverBuilder:
                   (BuildContext context, bool innerBoxIsScrolled) {
                 return <Widget>[
                   SliverAppBar(
                     leading: Container(),
-                    expandedHeight: toolHeight,
+                    expandedHeight: _toolHeight,
                     flexibleSpace: FlexibleSpaceBar(
                       background: Container(
-                        padding: EdgeInsets.all(8),
+                        padding: const EdgeInsets.all(UiConst.stdPaddingSize),
                         color: Colors.white,
                         child: _Top(),
                       ),
@@ -63,13 +63,14 @@ class CatalogPage extends StatelessWidget {
   }
 }
 
+///
 class _Top extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+          padding: const EdgeInsets.all(UiConst.stdPaddingSize),
           height: 48,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(36),
@@ -83,7 +84,7 @@ class _Top extends StatelessWidget {
             indicatorColor: Colors.white,
             indicator: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
-              color: brandMainColor,
+              color: UiConst.brandMainColor,
             ),
             tabs: [
               Tab(child: TabWidget(text: 'products_title'.tr())),
@@ -98,12 +99,13 @@ class _Top extends StatelessWidget {
   }
 }
 
+///
 class _Horiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 4),
-      height: iconHeight,
+      margin: const EdgeInsets.symmetric(vertical: UiConst.minPaddingSize),
+      height: _iconHeight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -167,6 +169,7 @@ class _Horiz extends StatelessWidget {
   }
 }
 
+///
 class _CategoryFilterButton extends StatelessWidget {
   final String imagePath;
   final String titleValue;

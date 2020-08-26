@@ -35,7 +35,7 @@ class _MainPageState extends State<MainPage> {
         title: Text('main_title'.tr()),
       ),
       body: Container(
-        color: brandMainBackgroundColor,
+        color: UiConst.brandMainBackgroundColor,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -45,7 +45,7 @@ class _MainPageState extends State<MainPage> {
                 width: _logoSize,
                 height: _logoSize,
               ),
-              standardVerticalSizedBox,
+              UiConst.standardVerticalSizedBox,
               RaisedButton(
                 child: StreamBuilder<int>(
                     initialData: TheMainPageViewModel.onTick.value,

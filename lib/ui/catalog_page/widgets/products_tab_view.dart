@@ -45,7 +45,7 @@ class _Items extends StatelessWidget {
         builder: (context, snapshot) {
           final d = snapshot.data;
           if (d.isLoading) {
-            return centerCircularProgressIndicator;
+            return UiConst.centerCircularProgressIndicator;
           }
           if (d.data.products.length == 0 || model.affectedData.length == 0) {
             return Center(child: Text('empty_catalog_title'.tr()));

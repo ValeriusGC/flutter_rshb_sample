@@ -30,6 +30,9 @@ abstract class ApiConst {
   static const categoryFruitTitleValue = 'Овощи и фрукты';
   static const categoryMeatTitleValue = 'Мясо и рыба';
   static const categoryMilkTitleValue = 'Молоко и яйца';
+  //
+  static const characteristicKey = 'title';
+  static const characteristicValue = 'value';
 }
 
 /// Interface for remote provider.
