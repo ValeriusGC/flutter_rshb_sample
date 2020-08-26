@@ -179,7 +179,6 @@ class CatalogModel implements Model{
         characteristics: (e[ApiConst.productCharacteristicsKey] as List)
             .map((e) => Map<String, String>.from(e)).toList(),
       );
-      print('$now: CatalogModel._decodeProducts: p=${p.characteristics.runtimeType}');
       return p;
     }).toList();
   }

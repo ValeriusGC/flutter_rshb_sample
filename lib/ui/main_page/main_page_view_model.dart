@@ -8,7 +8,7 @@ import 'package:rxdart/rxdart.dart';
 
 @immutable
 class MainPageViewModel implements Model{
-  static const _timerStartValue = 1;
+  static const _timerStartValue = 7;
   static const _timerDurationValue = 1000;
 
   final _timerCell = <Timer>[null];
