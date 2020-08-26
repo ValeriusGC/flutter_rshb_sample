@@ -13,11 +13,13 @@
 
 **Android:**
 
-<img src="./images/android_1.jpg" alt="drawing" width="100"/>
-<img src="./images/android_2.jpg" alt="drawing" width="100"/>
-<img src="./images/android_3.jpg" alt="drawing" width="100"/>
-<img src="./images/android_4.jpg" alt="drawing" width="100"/>
-<img src="./images/android_5.jpg" alt="drawing" width="100"/>
+<p float="left">
+    <img src="./images/android_1.jpg" alt="drawing" width="100"/>
+    <img src="./images/android_2.jpg" alt="drawing" width="100"/>
+    <img src="./images/android_3.jpg" alt="drawing" width="100"/>
+    <img src="./images/android_4.jpg" alt="drawing" width="100"/>
+    <img src="./images/android_5.jpg" alt="drawing" width="100"/>
+</p>    
 
 **iOS:**
 
