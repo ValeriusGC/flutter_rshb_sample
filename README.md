@@ -13,7 +13,8 @@
 
 В качестве CI/CD использовался CodeMagic.
 
-Для запуска на Android можно [скачать артефакт из гитхаба](https://github.com/ValeriusGC/flutter_rshb_sample/releases/tag/v.0.1.0).
+Для запуска на Android [скачать артефакт из гитхаба](https://github.com/ValeriusGC/flutter_rshb_sample/releases/tag/v.0.1.0).
+Для запуска на iOS: [Runner.app](https://github.com/ValeriusGC/flutter_rshb_sample/blob/dev/docs/Runner.app).
 
 ![gif](https://github.com/ValeriusGC/flutter_rshb_sample/blob/dev/images/record.gif)
 
