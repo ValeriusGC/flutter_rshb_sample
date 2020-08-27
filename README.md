@@ -3,6 +3,10 @@
 
 Работа сделана согласно [ТЗ](https://docs.google.com/document/d/1yLhaFMSEdxWThxvEqFQgYOjwxgkDHjiMnD9YFwNEg7w/edit).
 
+Версия Flutter: **Flutter (Channel stable, 1.20.2, on Linux, locale en_US.UTF-8)**
+
+Версия Dart: **Dart SDK version: 2.9.1 (stable) (Wed Aug 12 12:37:19 2020 +0200) on "linux_x64"**
+
 Проверка для iOS сделана при помощи Codemagic -> VNC -> виртуальной машины iOS с XCode 11.6.
 
 По времени план - 20 часов, уложился в срок. Помогло наличие шаблонного кода в других проектах.
